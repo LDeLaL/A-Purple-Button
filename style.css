@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#release {
+  width: 180px;
+  height: 70px;
+  background: transparent;
+  border: 2px solid #9b4dff;
+  color: #9b4dff;
+  font-size: 18px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#release:hover {
+  box-shadow: 0 0 20px #9b4dff;
+}
+
+.particle {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background: #a855ff;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fly 1s ease-out forwards;
+}
+
+@keyframes fly {
+  to {
+    transform: translate(var(--x), var(--y));
+    opacity: 0;
+  }
+}
