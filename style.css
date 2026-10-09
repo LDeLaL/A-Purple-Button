@@ -1,1 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#release {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 65px;
+  background: transparent;
+  border: 2px solid #9b4dff;
+  cursor: pointer;
+  transition: 0.12s ease;
+  z-index: 10;
+}
+
+#release:hover {
+  box-shadow: 0 0 20px #9b4dff;
+}
+
+#release:active {
+  transform: translate(-50%, -50%) scale(0.92);
+  box-shadow: 0 0 30px #9b4dff;
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #9b4dff;
+  box-shadow: 0 0 8px #9b4dff;
+  pointer-events: none;
+}
 
